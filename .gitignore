@@ -1,0 +1,5 @@
+run.sh
+gcp-credentials.json
+.pgpass
+test-stack.yml
+deploy-test-stack.sh
