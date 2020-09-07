@@ -1,6 +1,6 @@
 # xSystems PostgreSQL Google Storage Backup
 
-> Service to backup a PostgreSQL database to a Google Storage Bucket
+> Service to _**periodically**_ backup a PostgreSQL database to a Google Storage Bucket
 
 ## Usage
 
@@ -36,8 +36,6 @@ All available environment variables are:
 | POSTGRES_HOST               | 172.18.0.1    |           | The PostgreSQL hostname. _Should match the `.pgpass` file mentioned above_                  |
 | POSTGRES_PORT               | 5432          |           | The PostgreSQL port. _Should match the `.pgpass` file mentioned above_                      |
 | POSTGRES_USER               | postgres      |           | The PostgreSQL username. _Should match the `.pgpass` file mentioned above_                  |
-
-### Files
 
 After a backup has been performed a new file is created in the specified Google Storage Bucket called `${POSTGRES_DATABASE}.gz`.
 
